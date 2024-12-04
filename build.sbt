@@ -22,3 +22,5 @@ lazy val root = (project in file("."))
     ),
     addCompilerPlugin("org.chipsalliance" % "chisel-plugin" % chiselVersion cross CrossVersion.full),
   )
+
+  
