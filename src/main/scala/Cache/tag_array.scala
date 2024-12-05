@@ -46,20 +46,20 @@ cache_line_number:Int=512,data_block_size:Int=1024,width: Int=8,numRead: Int=2, 
     val tag_witdh    = (addr_lenth-offset_width-index_width).toInt
 
     //标志位与tag
-    val valid   = RegInit(VecInit(Seq.fill(numSets - 1)(VecInit(Seq.fill(roadnum - 1)(false.B(Bool()))))))  //每组个数*组数
-    val dirty   = RegInit(VecInit(Seq.fill(numSets - 1)(VecInit(Seq.fill(roadnum - 1)(false.B(Bool())))))) 
-    val tag     = RegInit(VecInit(Seq.fill(numSets - 1)(VecInit(Seq.fill(roadnum - 1)(0.U(tag_witdh.W)))))) //每组个数*组数，并且根据计算得出位宽
+    val valid   = RegInit(VecInit(Seq.fill(numSets)(VecInit(Seq.fill(roadnum)(false.B(Bool()))))))  //每组个数*组数
+    val dirty   = RegInit(VecInit(Seq.fill(numSets)(VecInit(Seq.fill(roadnum)(false.B(Bool())))))) 
+    val tag     = RegInit(VecInit(Seq.fill(numSets)(VecInit(Seq.fill(roadnum)(0.U(tag_witdh.W)))))) //每组个数*组数，并且根据计算得出位宽
 
     //IO寄存
     //写端口
-    val wr_addr_r_tag       =RegInit(VecInit(Seq.fill(writeprots - 1)(0.U(tag_witdh.W))))
-    val wr_addr_r_index     =RegInit(VecInit(Seq.fill(writeprots - 1)(0.U(index_width.W))))
-    val wr_addr_r_offset    =RegInit(VecInit(Seq.fill(writeprots - 1)(0.U(offset_width.W))))
-    val wr_data_r           =RegInit(VecInit(Seq.fill(writeprots - 1)(0.U(width.W))))
+    val wr_addr_r_tag       =RegInit(VecInit(Seq.fill(writeprots)(0.U(tag_witdh.W))))
+    val wr_addr_r_index     =RegInit(VecInit(Seq.fill(writeprots)(0.U(index_width.W))))
+    val wr_addr_r_offset    =RegInit(VecInit(Seq.fill(writeprots)(0.U(offset_width.W))))
+    val wr_data_r           =RegInit(VecInit(Seq.fill(writeprots)(0.U(width.W))))
     //读端口
-    val rd_addr_r_tag       =RegInit(VecInit(Seq.fill(readprots - 1)(0.U(tag_witdh.W))))
-    val rd_addr_r_index     =RegInit(VecInit(Seq.fill(readprots - 1)(0.U(index_width.W))))
-    val rd_addr_r_offset    =RegInit(VecInit(Seq.fill(readprots - 1)(0.U(offset_width.W))))
+    val rd_addr_r_tag       =RegInit(VecInit(Seq.fill(readprots)(0.U(tag_witdh.W))))
+    val rd_addr_r_index     =RegInit(VecInit(Seq.fill(readprots)(0.U(index_width.W))))
+    val rd_addr_r_offset    =RegInit(VecInit(Seq.fill(readprots)(0.U(offset_width.W))))
     
     //IO使能
     //写使能

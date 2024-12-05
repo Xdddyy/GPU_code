@@ -2,17 +2,17 @@
     "version": "1.4.0",
     "project": {
         "name": "chisel_temple.test",
-        "directory": "/home/xdy/chisel_temple",
-        "workspaceDir": "/home/xdy/chisel_temple",
+        "directory": "/home/xdy/GPU_code",
+        "workspaceDir": "/home/xdy/GPU_code",
         "sources": [
-            "/home/xdy/chisel_temple/src/test/scala",
-            "/home/xdy/chisel_temple/src/test/java"
+            "/home/xdy/GPU_code/src/test/scala",
+            "/home/xdy/GPU_code/src/test/java"
         ],
         "dependencies": [
             "chisel_temple"
         ],
         "classpath": [
-            "/home/xdy/chisel_temple/.bloop/out/chisel_temple/classes",
+            "/home/xdy/GPU_code/.bloop/out/chisel_temple/classes",
             "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/chipsalliance/chisel_2.13/6.2.0/chisel_2.13-6.2.0.jar",
             "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.16/scalatest_2.13-3.2.16.jar",
             "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
@@ -88,10 +88,10 @@
             "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.jar",
             "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18.jar"
         ],
-        "out": "/home/xdy/chisel_temple/.bloop/out/chisel_temple.test",
-        "classesDir": "/home/xdy/chisel_temple/.bloop/out/chisel_temple.test/classes",
+        "out": "/home/xdy/GPU_code/.bloop/out/chisel_temple.test",
+        "classesDir": "/home/xdy/GPU_code/.bloop/out/chisel_temple.test/classes",
         "resources": [
-            "/home/xdy/chisel_temple/src/test/resources"
+            "/home/xdy/GPU_code/src/test/resources"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -138,16 +138,16 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/usr/lib/jvm/java-11-openjdk-amd64",
+                "home": "/usr/lib/jvm/java-17-openjdk-amd64",
                 "options": [
-                    "-Duser.dir=/home/xdy/chisel_temple"
+                    "-Duser.dir=/home/xdy/GPU_code"
                 ]
             },
             "mainClass": [
                 
             ],
             "classpath": [
-                "/home/xdy/chisel_temple/.bloop/out/chisel_temple/classes",
+                "/home/xdy/GPU_code/.bloop/out/chisel_temple/classes",
                 "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/chipsalliance/chisel_2.13/6.2.0/chisel_2.13-6.2.0.jar",
                 "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.16/scalatest_2.13-3.2.16.jar",
                 "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
@@ -224,7 +224,7 @@
                 "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18.jar"
             ],
             "resources": [
-                "/home/xdy/chisel_temple/src/test/resources"
+                "/home/xdy/GPU_code/src/test/resources"
             ]
         },
         "resolution": {

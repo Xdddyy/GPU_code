@@ -2,11 +2,11 @@
     "version": "1.4.0",
     "project": {
         "name": "chisel_temple",
-        "directory": "/home/xdy/chisel_temple",
-        "workspaceDir": "/home/xdy/chisel_temple",
+        "directory": "/home/xdy/GPU_code",
+        "workspaceDir": "/home/xdy/GPU_code",
         "sources": [
-            "/home/xdy/chisel_temple/src/main/scala",
-            "/home/xdy/chisel_temple/src/main/java"
+            "/home/xdy/GPU_code/src/main/scala",
+            "/home/xdy/GPU_code/src/main/java"
         ],
         "dependencies": [
             
@@ -71,10 +71,10 @@
             "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.jar",
             "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18.jar"
         ],
-        "out": "/home/xdy/chisel_temple/.bloop/out/chisel_temple",
-        "classesDir": "/home/xdy/chisel_temple/.bloop/out/chisel_temple/classes",
+        "out": "/home/xdy/GPU_code/.bloop/out/chisel_temple",
+        "classesDir": "/home/xdy/GPU_code/.bloop/out/chisel_temple/classes",
         "resources": [
-            "/home/xdy/chisel_temple/src/main/resources"
+            "/home/xdy/GPU_code/src/main/resources"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -104,9 +104,9 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/usr/lib/jvm/java-11-openjdk-amd64",
+                "home": "/usr/lib/jvm/java-17-openjdk-amd64",
                 "options": [
-                    "-Duser.dir=/home/xdy/chisel_temple"
+                    "-Duser.dir=/home/xdy/GPU_code"
                 ]
             },
             "mainClass": [
@@ -173,7 +173,7 @@
                 "/home/xdy/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18.jar"
             ],
             "resources": [
-                "/home/xdy/chisel_temple/src/main/resources"
+                "/home/xdy/GPU_code/src/main/resources"
             ]
         },
         "resolution": {
